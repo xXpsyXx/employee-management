@@ -18,5 +18,5 @@ app.get("/canteen", function(req, res) {
 })
 
 app.listen(8000, function() {
-    console.log("Pranay ka website sabse chan!");
+    console.log("Server is up and running!");
 });
