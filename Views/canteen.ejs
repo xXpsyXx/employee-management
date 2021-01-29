@@ -1,18 +1,19 @@
 <%- include('canteen/canteen-header') %>
-
-<form>
-    <div class="container">
-        <label>Username : </label>
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <label>Password : </label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        <button type="submit">Login</button>
-        <button type="button">Register</button>
-        <input type="checkbox" checked="checked"> Remember me
-        <button type="button" class="cancelbtn"> Cancel</button>
-        Forgot <a href="#"> password? </a>
-    </div>
-</form>
-
-
-<%- include('canteen/canteen-footer') %>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+// document.getElementById("myLink").click();
+</script>
+<%- include('canteen/canteen-footer') %> 

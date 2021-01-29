@@ -1,7 +1,9 @@
 
-    /* body{
+    * body{
         background-color: lightblue;
+        background-image: url('/images/main_frame.jpg');
     }
+    
     button{
         background-color:#4cAF50;
         width: 100;
@@ -9,6 +11,7 @@
         padding: 15px;
         cursor:pointer;
     }
+
     form{
         border:3px solid #f1f1f1;
 
@@ -34,13 +37,13 @@
 
  .container {
         padding: 25px;
-        background-color:red;
-    } */
+        
+    } 
     * {
         box-sizing: border-box;
-    }
+    } */
     
-    body {
+     body {
         background: rgba(255,153,0,1);
         max-height: 100%;
     }

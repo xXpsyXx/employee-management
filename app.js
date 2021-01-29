@@ -13,10 +13,20 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.get("/canteen", function(req, res) {
-    res.render("canteen");
+app.get("/login", function(req, res) {
+    res.render("login");
 })
 
+ app.get("/admin", function(req, res) {
+     res.render("admin");
+ })
+
+ app.get("/canteen", function(req, res) {
+    res.render("canteen");
+})
+app.get("/canteen_menu", function(req, res) {
+    res.render("canteen_menu");
+})
 app.listen(8000, function() {
     console.log("Server is up and running!");
 });
