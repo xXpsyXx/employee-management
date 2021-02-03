@@ -29,7 +29,7 @@
 	text-align: center;
 	border: 2px solid #3498db;
 	padding: 14px 10px;
-	width: 200px;
+	width: 280px;
 	outline: none;
 	color: white;
 	border-radius: 24px;
@@ -53,6 +53,11 @@
 	transition: 0.25s;
 	cursor: pointer;
 }
+
+.box a{
+	text-decoration: none;
+}
+
 .box input[type ="button"]:hover{
 	background: #2ecc71;
 }

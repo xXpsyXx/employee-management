@@ -9,24 +9,24 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.render("index");
 });
 
-app.get("/login", function(req, res) {
+app.get("/login", function (req, res) {
     res.render("login");
 })
 
- app.get("/admin", function(req, res) {
-     res.render("admin");
- })
-
-  app.get("/canteen", function(req, res) {
-     res.render("canteen");
+app.get("/admin", function (req, res) {
+    res.render("admin");
 })
-app.get("/canteen_menu", function(req, res) {
+
+app.get("/canteen", function (req, res) {
+    res.render("canteen");
+})
+app.get("/canteen_menu", function (req, res) {
     res.render("canteen_menu");
 })
-app.listen(3000, function() {
+app.listen(3000, function () {
     console.log("Server is up and running!");
 });
