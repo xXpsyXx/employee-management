@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/announcement.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check">
+			<i class="fas fa-bars" id="sidebar_btn"></i>
+		</label>
+		<div class="left_area">
+			<h3> F <span>Society</span></h3>
+		</div>
+		<div class="right_rea">
+			<a href="/logout" class="logout_btn">logout</a>
+		</div>
+	</header>
+	<div class="sidebar">
+		<center>
+			<img src="/images/admin.png" class="admin_image" alt="">
+			<h4>
+				<%= name %>
+			</h4>
+		</center>
+		<a href="dashboard"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+		<a href="userdetails"><i class="fas fa-user"> </i><span>Employee</span></a>
+		<a href="registeruser"><i class="fas fa-registered"> </i><span>Registration</span></a>
+		<a href="parking"><i class="fas fa-parking"></i><span>Parking</span></a>
+		<a href="canteen"><i class="fas fa-utensils"></i><span>Canteen</span></a>
+		<a href="Announcement"><i class="fas fa-scroll"></i><span>Announcement</span></a>
+		<a href="feedback"><i class="fas fa-comment-dots"></i><span>FeedBack</span></a>
+	</div>
+	</header>
+	<form action="announcement" method="POST">
+		<div class="content"></div>
+		<div class="container">
+			<div class="title">Announcement</div>
+			<div class="msg">
+				<!-- <input type="text" placeholder="message" name="announcement"> -->
+
+				<textarea placeholder="message" name="announcement"></textarea>
+				<input type="submit" class="btn" name="send">
+			</div>
+	</form>
+
+	</div>
+</body>
+
+</html>

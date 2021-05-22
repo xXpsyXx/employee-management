@@ -1,0 +1,41 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "Roboto",sans-serif;
+ background-color: #2F4960;
+
+} 
+  .container{
+  margin-top: 200px;
+  width:400px;
+  background:#22242A;
+  padding:30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+
+}
+form h4{
+  color: #fff;
+}
+form label {
+  display: block;
+  color:#fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.btn{
+  background: #39b7dd;
+  text-align: center;
+  padding:10px;
+  border-radius: 15px;
+  color:#fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.btn:hover{
+    background: #0D9DBB;
+
+  }

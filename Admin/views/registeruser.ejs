@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/registeruser.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+	<input type="checkbox" id="check">
+	<header>
+		<label for="check">
+			<i class="fas fa-bars" id="sidebar_btn"></i>
+		</label>
+		<div class="left_area">
+			<h3> F <span>Society</span></h3>
+		</div>
+		<div class="right_rea">
+			<a href="/logout" class="logout_btn">logout</a>
+		</div>
+
+		<div class="container">
+			<% if(typeof errors !='undefined' ){ %>
+				<% errors.forEach(function(error) { %>
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<%= error.msg %>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+					</div>
+					<% }); %>
+						<% } %>
+
+							<% if(success_msg !='' ) { %>
+								<div class="alert alert-success alert-dismissible fade show" role="alert">
+									<%= success_msg %>
+										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+								</div>
+								<% } %>
+
+									<% if(error_msg !='' ) { %>
+										<div class="alert alert-warning alert-dismissible fade show" role="alert">
+											<%= error_msg %>
+												<button type="button" class="close" data-dismiss="alert"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+										</div>
+										<% } %>
+											<% if(error !='' ){ %>
+												<div class="alert alert-danger alert-dismissible fade show"
+													role="alert">
+													<%= error %>
+														<button type="button" class="close" data-dismiss="alert"
+															aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+												</div>
+												<% } %>
+
+
+
+													<form action="registeruser" method="POST">
+														<div class="title">Employee</div>
+														<div class="input-fields">
+															<input type="text" class="input" placeholder="Name"
+																name="name1">
+															<input type="text" class="input" placeholder="Age"
+																name="age">
+															<input type="text" class="input" placeholder="DOB"
+																name="dob">
+															<input type="text" class="input" placeholder="Gender"
+																name="gender">
+															<input type="text" class="input" placeholder="Phone no"
+																name="phone">
+															<input type="text" class="input" placeholder="Email"
+																name="email">
+															<input type="password" class="input" placeholder="password"
+																name="password">
+															<input type="password" class="input"
+																placeholder="confirm password" name="password2">
+															<input type="text" class="input" placeholder="Aadhar no"
+																name="aadhar">
+															<input type="submit" class="btn" name="submit">
+														</div>
+
+													</form>
+		</div>
+		</div>
+		</div>
+	</header>
+
+
+	<div class="sidebar">
+		<center>
+			<img src="/images/admin.png" class="admin_image" alt="">
+			<h4>
+				<%= name %>
+			</h4>
+		</center>
+		<a href="dashboard"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+		<a href="userdetails"><i class="fas fa-user"> </i><span>Employee</span></a>
+		<a href="registeruser"><i class="fas fa-registered"> </i><span>Registration</span></a>
+		<a href="parking"><i class="fas fa-parking"></i><span>Parking</span></a>
+		<a href="canteen"><i class="fas fa-utensils"></i><span>Canteen</span></a>
+		<a href="Announcement"><i class="fas fa-scroll"></i><span>Announcement</span></a>
+		<a href="feedback"><i class="fas fa-comment-dots"></i><span>FeedBack</span></a>
+	</div>
+	<div class="content"></div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+	margin:0;
+	padding:0;
+ /*font-family: "Roboto",sans-serif;*/
+}
+.wrap{
+	position: relative;
+	max-width: 355px;
+	margin: auto;
+	padding-top: 50px;
+
+}
+.text {
+	font-family: "lucida handwriting" ;
+	height: 57px;
+	background: #22242A;
+	color: #c5ecfd;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 800;
+	align-items: center;
+	left: 12px;
+	border-radius: 30px 0 0 30px;
+
+}
+.text:after {
+    position: absolute;
+    content:"";
+    right:-10%;
+    border-top: 30px solid transparent;
+    border-left: 36px solid #22242A;
+    border-bottom: 29px solid transparent;
+    top:-1px;
+}
+.text {
+	position: absolute;
+	width:100%;
+	margin:-20px;
+	font-weight: 500;
+	text-align: left;
+}

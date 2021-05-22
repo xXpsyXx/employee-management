@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    color: #777;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* min-height: 100%; */
+
+}
+header {
+    position: fixed;
+    background: #22242A;
+    padding: 25px;
+    width: 100%;
+    height: 100px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 900;
+    
+}
+.left_area span{
+    color: #1DC4E7;
+}
+.wrapper{
+    width: 100%; 
+    margin: 0 auto;
+}
+.wrapper ul{
+    list-style: none;
+    margin-top: -55px;
+}
+.wrapper ul li {
+    background: #262626;
+    width: 170px;
+    /* border: 1px solid #fff; */
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.wrapper ul li:hover{
+    background: #1DC4E7; 
+}
+    
+.wrapper ul ul{
+    display: none;
+    margin-top: -5px;
+}
+.wrapper ul li:hover > ul{
+    display: block;
+}
+.wrapper ul ul ul{
+    /* margin-left: 100px; */
+    top: 0;
+    position: absolute;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 5, 5, 0.3)
+}
+.sub-menu {
+    display: none;
+}
+.main-nav ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: red;
+    margin-top: 35px;
+    margin-left: -15px;
+}
+.main-nav.nav ul:hover .sub-menu{
+    display: block;
+    margin: 10px;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .88em .88em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.shop-item {
+    margin: 150px;
+}
+h2{
+  font-size: 40px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 560px;
+    width: 550px;
+    border-radius: 10px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    font-size: 30px;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 2em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 2em;
+    color: #333;
+}
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 2em;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}

@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+  }
+  .topnav{
+    position: relative;
+    margin:265px auto 0;
+    width:739px;
+    height:50px;
+    background-color: #2F323A;
+    border-radius: 8px;
+    font-size: 0;
+    margin-top: 21px;
+
+   }
+.topnav a {
+  float: left;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+    }
+.topnav a:hover {
+  background-color: #19B3D3;
+  border-radius: 8px;
+  height:21px;
+}
+

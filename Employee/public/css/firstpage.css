@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.container .btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    border-radius: 15px;
+    height: 25px;
+    width: 135px;
+    border: 2px solid;
+    background: #dfe20a;
+    border: none;
+}
+.top-right {
+    position: fixed;
+    top: 40%;
+    right: 15%;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;    
+  }
+  

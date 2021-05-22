@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <title>Car_Parking</title>
+    <link rel="stylesheet" href="/css/bookconfirm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3> F <span>Society</span></h3>
+        </div>
+    </header>
+    <center>
+        <div class="container">
+            <h3>Slot Booking</h3>
+            <hr>
+            <form>
+                <button class="btn selection">Your Selection</button>
+                <button class="btn booked">Booked Slots</button>
+            </form>
+
+            <p> </p>
+            <!-- <form>
+            <button class="btn available">Available Slots</button>
+            <button class="btn navailable">Not Available</button>
+        </form> -->
+            <table>
+                <tr>
+                    <td>
+                        Slot 1
+                    </td>
+                    <td>
+                        Slot 2
+                    </td>
+                    <td>
+                        Slot 3
+                    </td>
+                    <td>
+                        Slot 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="slot1" class="icons" onclick="myclick(this)" name="book1"><i
+                                class="material-icons parking-avilable">local_parking</i></button>
+                    </td>
+                    <td>
+                        <button id="slot2" class="icons" onclick="myclick(this)" name="book2"><i
+                                class="material-icons parking-avilable">local_parking</i></button>
+                    </td>
+                    <td>
+                        <button id="slot3" class="icons" onclick="myclick(this)" name="book3"><i
+                                class="material-icons parking-unavilable">block</i></button>
+                    </td>
+                    <td>
+                        <button id="slot4" class="icons" onclick="myclick(this)" name="book4"><i
+                                class="material-icons parking-unavilable">block</i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Slot 5
+                    </td>
+                    <td>
+                        Slot 6
+                    </td>
+                    <td>
+                        Slot 7
+                    </td>
+                    <td>
+                        Slot 8
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="slot5" class="icons" onclick="myclick(this)" name="book5"><i
+                                class="material-icons parking-avilable">local_parking</i></button>
+                    </td>
+                    <td>
+                        <button id="slot6" class="icons" onclick="myclick(this)" name="book6"><i
+                                class="material-icons parking-unavilable">block</i></button>
+                    </td>
+                    <td>
+                        <button id="slot7" class="icons" onclick="myclick(this)" name="book7"><i
+                                class="material-icons parking-unavilable">block</i></button>
+                    </td>
+                    <td>
+                        <button id="slot8" class="icons" onclick="myclick(this)" name="book8"><i
+                                class="material-icons parking-avilable">local_parking</i></button>
+                    </td>
+                </tr>
+            </table>
+            <p> </p>
+            <form>
+                <button class="btn slot" type="submit" onclick="myFunction()">Book your Slots</button>
+            </form>
+            <script>
+                function myFunction() {
+                    alert("Your slots has been Booked !");
+                }
+                function myclick(button) {
+                    var button = document.getElementById(button.id)
+                    button.style.backgroundColor = "green";
+                }
+            </script>
+    </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="/css/time.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="left_area">
+      <h3> F <span>Society</span></h3>
+    </div>
+    <div class="right_rea">
+      <a href="/logout" class="logout_btn">logout</a>
+    </div>
+    <div class="wrapper">
+      <div class="heading">Announcement</div>
+      <div class="text-update">
+        <marquee>
+          <table>
+            <%user101Details.forEach(Announcement=> {%>
+              <tr></tr>
+              <td>
+                <%= Announcement.announcement %>
+              </td>
+              </tr>
+              <%})%>
+          </table>
+        </marquee>
+        <div class="wrap">
+          <div class="text">
+            <!--<marquee>-->
+            <p>
+              Hello! <%= name1 %>
+            </p>
+            <!--</marquee>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <button id="myButton" onclick="alert('You Checked In')"><i class="fas fa-sign-in-alt">Check-In</i></button>
+
+
+      <button id="myButton1" onclick="alert('You Checked Out')"><i class="fas fa-sign-in-alt">Check-Out</i>
+        <!-- <button id="mybutton" >
+        <i class="fas fa-sign-in-alt"></i>
+            
+        </button> -->
+    </div>
+
+
+    <script>
+
+
+      const button = document.getElementById('myButton');
+      button.addEventListener('click', function (e) {
+        console.log('button was clicked');
+
+        fetch('/clicked', { method: 'POST' })
+          .then(function (response) {
+            if (response.ok) {
+              console.log('click was recorded');
+              return;
+            }
+            throw new Error('Request failed.');
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+
+
+      });
+
+      const button1 = document.getElementById('myButton1');
+      button1.addEventListener('click', function (e) {
+        console.log('button was clicked');
+
+        fetch('/cliked', { method: 'POST' })
+          .then(function (response) {
+            if (response.ok) {
+              console.log('click was recorded');
+              return;
+            }
+            throw new Error('Request failed.');
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+
+
+      });
+
+
+    </script>
+  </header>
+</body>
+
+</html>
