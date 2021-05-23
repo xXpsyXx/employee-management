@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-color: rgb(32,28,28);
 }
 .head {
     color: rgb(253, 253, 253);

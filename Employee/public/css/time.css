@@ -29,7 +29,7 @@ header {
   text-decoration: none;
   float: right;
   margin-top: -20px;
-  margin-right: 40px;
+  margin-right: -10px;
   border-radius: 2px;
   font-size: 15px;
   font-weight: 600;
@@ -40,6 +40,31 @@ header {
 
 .logout_btn:hover {
   background: #0d9dbb;
+}
+.wrap{
+	position: relative;
+	max-width: 355px;
+	margin: auto;
+	padding-top: 50px;
+
+}
+.text {
+	font-family: "lucida handwriting";
+	height: 57px;
+	background: #22242A;
+	color: #c5ecfd;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 800;
+	align-items: center;
+	left: 12px;
+	border-radius: 30px 30px 30px 30px;
+	position: absolute;
+	width:100%;
+	margin:-20px;
+	font-weight: 500;
+	text-align: center;
 }
 .wrapper {
   position: relative;
@@ -102,7 +127,7 @@ header {
   box-shadow: 0 0 10px;
   padding: 30px;
   border-radius: 8px;
-  margin-left: 90px;
+  margin-left: 40px;
 }
 button {
   width: 200px;
@@ -124,41 +149,80 @@ button {
 button:hover {
   background: #0d9dbb;
 }
-
-.wrap{
-	position: relative;
-	max-width: 355px;
-	margin-top: auto;
-	padding-top: 50px;
-
-}
-.text {
-	font-family: "lucida handwriting" ;
-	height: 57px;
-	background: #d4d7df;
-	color: #c5ecfd;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 20px;
-	font-weight: 800;
-	align-items: center;
-	left: 12px;
-	border-radius: 30px 0 0 30px;
+.box{
+  margin-top: 100px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 15px;
+  background-color: #22242A;
 
 }
-.text:after {
-    position: absolute;
-    content:"";
-    right:-10%;
-    border-top: 30px solid transparent;
-    border-left: 36px solid #22242A;
-    border-bottom: 29px solid transparent;
-    top:-1px;
+.switch{
+background:#22242A ;
+text-align: center;
+padding:15px;
+border-radius: 15px;
+text-transform: uppercase;
+cursor: pointer;
+color:#fff;
+text-decoration: none;
+transition: 0.5s;
+transition-property: background;
+font-family: "lucida handwriting";
+font-size: 25px;
 }
-.text {
-	position: absolute;
-	width:100%;
-	margin:-20px;
-	font-weight: 500;
-	text-align: left;
+.popup{
+width:100%;
+height:100%;
+position: absolute;
+top:0;
+justify-content: center;
+align-items: center;
+display:none;
+}
+.contact-form{
+position: absolute;
+top:-500%;
+transform: translateY(-50%);
+width: 70%;
+height: 200px;
+padding: 0 20px;
+max-width: 500px;
+margin-top: 800px;
+margin-right:auto;
+margin-left: -25px;
+background:#22242A;
+padding:30px;
+border-radius: 5px;
+box-shadow: 0 0 10px;
+
+} 
+.paragraph {
+font-family: "lucida handwriting";
+height: 20px;
+background: #22242A;
+color: #c5ecfd;
+text-transform: upercase;
+letter-spacing: 1px;
+font-size: 15px;
+font-weight: 200;
+align-items: center;
+left: 12px;
+text-align: center;
+margin-top: -21px;
+
+}
+.close{
+  position: absolute;
+  top:9px;
+  right:10px;
+  background:#22242A;
+  color:#c5ecfd;
+  height:20px;
+  width:20px;
+  padding: 10px  -9px ;
+  border-radius: 44%;
+  cursor: pointer;
+  box-shadow: 0 0 5px;
+  text-align: center;
 }

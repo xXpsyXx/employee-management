@@ -1,4 +1,4 @@
-
+require('dotenv/config')
 const mongoose = require("mongoose");
 const url = process.env.SECRET_MESSAGE;
 mongoose.connect(url, {
