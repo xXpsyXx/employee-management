@@ -109,7 +109,7 @@ app.get("/bookconfirm", (req, res) => {
 
 app.post("/", (req, res, next) => {
   passport.authenticate("local", {
-    successRedirect: "/checkin",
+    successRedirect: "/breakfast",
     failureRedirect: "/",
     failureFlash: true,
   })(req, res, next);
@@ -207,8 +207,8 @@ app.post("/cliked", (req, res) => {
   );
 });
 
-app.get("/firstpage", (req, res) => {
-  res.render("firstpage");
+app.get("/frontpage", (req, res) => {
+  res.render("frontpage");
 });
 
 app.get("/lunch", ensureAuthenticated, (req, res) => {

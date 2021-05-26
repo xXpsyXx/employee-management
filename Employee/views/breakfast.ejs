@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canteen</title>
-    <meta name="description" content="This is the description">
-    <link rel="stylesheet" href="/css/store.css">
-    <script src="/js/store1.js" async></script>
-</head>
-
-<body>
-    <header class="main-header">
-        <div class="left_area">
-            <h3> F <span>Society</span></h3>
-            <div class="wrapper">
-                <nav>
+    <head>
+        <title>Canteen</title>
+        <meta name="description" content="This is the description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/store.css">
+        <script src="/js/store1.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="left_area">
+                <h3> F <span>Society</span></h3>
+                <div class="wrapper">
+                    <nav>
                     <ul>
-                        <li> <a href="/logout" class="logout_btn">logout</a></li>
+                        <li><a href="/logout"class="logout_btn">logout</a></li>
                         <li>menu
                             <ul>
                                 <li><a href="breakfast"> breakfast</a></li>
@@ -24,61 +22,70 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                    </nav>
+                    </div>
             </div>
-        </div>
-    </header>
-    <section class="container content-section">
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Poha</span>
-                <img class="shop-item-image" src="Images/poha.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">₹20</span>
-                    <button id="myButton10" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </header>
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <div class="box">
+                    <span class="shop-item-title">Poha</span>
+                    <img class="shop-item-image" src="Images/poha1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹20</span>
+                        <button id="myButton10" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="box">
+                    <span class="shop-item-title">Idle</span>
+                    <img class="shop-item-image" src="Images/idle1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹30</span>
+                        <button id="myButton11" class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="box">
+                    <span class="shop-item-title">Tea</span>
+                    <img class="shop-item-image" src="Images/tea1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹10</span>
+                        <button id="myButton12" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="box">
+                    <span class="shop-item-title">Coffee</span>
+                    <img class="shop-item-image" src="Images/coffee.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₹15</span>
+                        <button id="myButton13" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Idle</span>
-                <img class="shop-item-image" src="Images/idle.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">₹30</span>
-                    <button id="myButton11" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="new">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <!-- <span class="cart-quantity cart-header cart-column">QUANTITY</span> -->
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Tea</span>
-                <img class="shop-item-image" src="Images/tea.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">₹10</span>
-                    <button id="myButton12" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
+            <div class="cart-items">
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Coffee</span>
-                <img class="shop-item-image" src="Images/coffee.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">₹15</span>
-                    <button id="myButton13" class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹0</span>
             </div>
-        </div>
-    </section>
-    <section class="container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <!-- <span class="cart-quantity cart-header cart-column">QUANTITY</span> -->
-        </div>
-        <div class="cart-items">
-        </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">₹0</span>
-        </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-    </section>
-</body>
-
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </body>
 </html>

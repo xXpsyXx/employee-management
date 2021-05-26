@@ -190,7 +190,7 @@ if (document.readyState == "loading") {
   
   const button6 = document.getElementById("myButton12");
   button6.addEventListener("click", function (e) {
-    fetch("/food3", { method: "POST" })
+    fetch("/food6", { method: "POST" })
       .then(function (response) {
         if (response.ok) {
           return;
@@ -204,7 +204,7 @@ if (document.readyState == "loading") {
   
   const button7 = document.getElementById("myButton13");
   button7.addEventListener("click", function (e) {
-    fetch("/food3", { method: "POST" })
+    fetch("/food7", { method: "POST" })
       .then(function (response) {
         if (response.ok) {
           return;

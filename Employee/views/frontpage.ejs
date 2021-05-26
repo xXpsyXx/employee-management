@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"  href="/css/frontpage.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="box">
+<a href="#"class="switch" id="switch"><i class="fas fa-info-circle"></i></a>
+</div>
+</div>
+<div class="popup">
+	<div class="contact-form">
+		<div class="paragraph">
+			<div class="close" alt="close">X</div>
+				<p>
+				<em>
+			As the number of software tools we use to run, our company continues to grow, 
+			we're generating more and more data in more and more places.
+            At F-socity, our mission is to make it easy as possible for everyone in a company 
+            to moniter, analyze and improve performance in one spot on any device
+</em>
+</p>
+</div>
+</div>
+</div>
+<script>
+document.getElementById("switch").addEventListener("click", function(){
+	document.querySelector(".popup").style.display ="flex";
+})
+document.querySelector(".close").addEventListener("click",function(){
+	document.querySelector(".popup").style.display = "none";
+})
+</script>
+<div class="right_rea">
+		<a href="breakfast" class="logout_btn"><em>CAFETERIA</em></a>
+	</div>
+</body>
+</html>
