@@ -11,15 +11,15 @@ body{
   background-repeat: no-repeat;
   }
   .box{
-    margin-top: 660px;
+    margin-top: 655px;
     margin-left: -10px;
     padding:20px;
-    background-color: #22242A;
+    
     width:85%;
 
   }
  .switch{
-  background:#22242A ;
+  
   text-align: center;
   padding:15px;
   border-radius: 15px;
@@ -31,6 +31,8 @@ body{
   transition-property: background;
   font-family: "lucida handwriting";
   font-size: 25px;
+  margin-left: 300px;
+  
   
 }
  .popup{
@@ -51,9 +53,9 @@ body{
   height: 110px;
   padding: 0 20px;
   max-width: 600px;
-  margin-top: 800px;
+  margin-top: 700px;
   margin-right:auto;
-  margin-left: 260px;
+  margin-left: 520px;
   background:#22242A;
   padding:30px;
   border-radius: 5px;
@@ -88,6 +90,7 @@ body{
   cursor: pointer;
   box-shadow: 0 0 5px;
   text-align: center;
+ 
 }
 .logout_btn{
     padding:5px;

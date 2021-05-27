@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     /* min-height: 100%; */
-    background-image: url(/images/gradient.jpg);
+  background-image: url(/images/gradient.jpg); 
 }
 header {
     position: fixed;
@@ -197,7 +197,7 @@ h2{
     margin-right: auto;
     margin-top: -600px; */
     background:#22242A;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px #fff;
 }
 .shop-item-title {
     display: block;
@@ -248,10 +248,12 @@ h2{
     color: #333;
 }
 .new{
-    width: 400px;
+    width: 380px;
     height: auto;
     border-radius: 20px 20px 20px 20px;
-    margin-left: -25px;
+    margin-left: -18px;
+    box-shadow: 0 0 10px #fff;
+    
     background:#22242A;
 }
 .cart-column {

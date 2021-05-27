@@ -143,7 +143,7 @@ button {
   transition: 0.5s;
   transition-property: background;
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 13px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   box-shadow: 0 2px 2px #fff;
@@ -152,7 +152,7 @@ button:hover {
   background: #0d9dbb;
 }
 .box{
-  margin-top: 100px;
+  margin-top: 150px;
   margin-left: -10px;
   margin-right: -12px;
   padding: 15px;
@@ -184,7 +184,7 @@ display:none;
 }
 .contact-form{
 position: absolute;
-top:-500%;
+top:-600%;
 transform: translateY(-50%);
 width: 70%;
 height: 200px;
@@ -207,7 +207,7 @@ color: #c5ecfd;
 text-transform: upercase;
 letter-spacing: 1px;
 font-size: 15px;
-font-weight: 200;
+font-weight: 400;
 align-items: center;
 left: 12px;
 text-align: center;
@@ -223,7 +223,7 @@ margin-top: -21px;
   height:20px;
   width:20px;
   padding: 10px  -9px ;
-  border-radius: 44%;
+  border-radius: 10px 10px 10px 10px;
   cursor: pointer;
   box-shadow: 0 0 5px;
   text-align: center;
