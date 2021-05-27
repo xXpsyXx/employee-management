@@ -10,7 +10,7 @@ const session = require("express-session");
 const passport = require("passport");
 const { ensureAuthenticated } = require("./config/auth");
 
-// const qr = require("qrcode");
+const qr = require("qrcode");
 
 // const contactSchema ={
 //   name3:{
@@ -138,7 +138,7 @@ app.get("/%%%register%%%", (req, res) => {
   res.render("Register");
 });
 
-app.get("/registeruser",(req, res) =>
+app.get("/registeruser",ensureAuthenticated,(req, res) =>
   res.render("registeruser", {
     // name: req.user.name,
   })
@@ -262,7 +262,7 @@ app.post("/scan", (req, res) => {
   });
 });
 
-app.post("/registeruser", ensureAuthenticated,(req, res) => {
+app.post("/registeruser", (req, res) => {
   const { name1, age, dob, gender, phone, email, password, password2, aadhar } =
     req.body;
 
@@ -378,7 +378,7 @@ app.get("/feedback", ensureAuthenticated, (req, res) => {
 // });
 
 //Register dummy post page
-app.post("/register", (req, res) => {
+app.post("/register",ensureAuthenticated, (req, res) => {
   const { name, email, password, password2 } = req.body;
 
   let errors = [];
