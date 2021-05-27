@@ -10,7 +10,6 @@ const session = require("express-session");
 const passport = require("passport");
 const { ensureAuthenticated } = require("./config/auth");
 
-
 // const qr = require("qrcode");
 
 // const contactSchema ={
@@ -139,7 +138,7 @@ app.get("/%%%register%%%", (req, res) => {
   res.render("Register");
 });
 
-app.get("/registeruser", ensureAuthenticated, (req, res) =>
+app.get("/registeruser",ensureAuthenticated,(req, res) =>
   res.render("registeruser", {
     name: req.user.name,
   })
@@ -263,7 +262,7 @@ app.post("/scan", (req, res) => {
   });
 });
 
-app.post("/registeruser", ensureAuthenticated, (req, res) => {
+app.post("/registeruser", ensureAuthenticated,(req, res) => {
   const { name1, age, dob, gender, phone, email, password, password2, aadhar } =
     req.body;
 
@@ -482,8 +481,8 @@ app.get("/welcome", (req, res) => {
   res.render("welcome");
 });
 
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => {
-  console.log(`Server is up and running!`);
+app.listen(PORT, () => {
+  console.log(`Server is up and running at ${PORT}`);
 });

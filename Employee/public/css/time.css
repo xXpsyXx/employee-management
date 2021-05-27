@@ -9,7 +9,7 @@ header {
   position: absolute;
   background: #22242a;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   height: 30px;
 
 }
@@ -44,8 +44,10 @@ header {
 .wrap{
 	position: relative;
 	max-width: 355px;
-	margin: auto;
+	margin-left:10px;
 	padding-top: 50px;
+	margin-right: -10px;
+	
 
 }
 .text {
@@ -68,15 +70,16 @@ header {
 }
 .wrapper {
   position: relative;
-  max-width: 450px;
+  max-width: 350px;
   margin: auto;
   padding-top: 80px;
   margin-left: 15px;
+  margin-right:2px;
 }
 .heading {
   display: block;
   position: absolute;
-  width: 150px;
+  width: 50px;
   font-size: 20px;
   background: #1dc4e7;
   color: #fff;
@@ -90,7 +93,7 @@ header {
 .heading:after {
   position: absolute;
   content: "";
-  right: -16%;
+  right: -35%;
   border-top: 30px solid transparent;
   border-left: 30px solid #1dc4e7;
   border-bottom: 29px solid transparent;
@@ -127,7 +130,7 @@ header {
   box-shadow: 0 0 10px;
   padding: 30px;
   border-radius: 8px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 button {
   width: 200px;
@@ -152,7 +155,7 @@ button:hover {
 .box{
   margin-top: 100px;
   margin-left: -10px;
-  margin-right: -10px;
+  margin-right: -12px;
   padding: 15px;
   background-color: #22242A;
 

@@ -12,6 +12,3 @@ mongoose.connect(url, {
     console.log(`Failed`);
 })
 
-
-
-// mongodb+srv://pranay:1234@testing.osytn.mongodb.net/adminDB?retryWrites=true&w=majority'
