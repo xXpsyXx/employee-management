@@ -1,6 +1,6 @@
 require('dotenv/config')
 const mongoose = require("mongoose");
-const url = SECRET_MESSAGE
+const url = process.env.SECRET_MESSAGE;
 mongoose.connect(url, {
     useNewUrlParser:true,
     useUnifiedTopology:true,

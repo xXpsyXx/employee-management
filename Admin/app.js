@@ -10,7 +10,7 @@ const session = require("express-session");
 const passport = require("passport");
 const { ensureAuthenticated } = require("./config/auth");
 
-const qr = require("qrcode");
+// const qr = require("qrcode");
 
 // const contactSchema ={
 //   name3:{
