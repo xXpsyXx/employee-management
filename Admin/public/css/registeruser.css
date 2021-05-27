@@ -1,4 +1,5 @@
 body{
+  background-image: url(/images/gradient.jpg);
   margin:0;
   padding:0;
   font-family:"Roboto",sans-serif; 
@@ -141,9 +142,9 @@ label #sidebar_btn{
   width: 100%;
   padding: 25px 30px;
   border-radius: 8px;
-  margin-left: 470px;
-  margin-top: 100px;
-  box-shadow: 0 0 10px;
+  margin-left: 690px;
+  margin-top: 150px;
+  box-shadow: 0 0 10px #fff;
   align-items: center;
   background-color:#22242A;
 }
@@ -156,8 +157,8 @@ label #sidebar_btn{
   font-style: "Roboto",sans-serif; 
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: -450px;
-  margin-left: -300px;
+  margin-top: -116px;
+  margin-left: 10px;
   border-radius: 5px;
 }
 .container form .user-details{
@@ -241,8 +242,8 @@ form input[type="radio"]{
   font-style: "Roboto",sans-serif; 
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 320px;
-  margin-left: 200px;
+  margin-top: 65px;
+  margin-left: 220px;
   border-radius: 5px;
   width:100px;
   cursor: pointer;

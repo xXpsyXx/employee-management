@@ -138,9 +138,9 @@ app.get("/%%%register%%%", (req, res) => {
   res.render("Register");
 });
 
-app.get("/registeruser",ensureAuthenticated,(req, res) =>
+app.get("/registeruser",(req, res) =>
   res.render("registeruser", {
-    name: req.user.name,
+    // name: req.user.name,
   })
 );
 

@@ -2,8 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url(background.jpg);
-  background-color: rgb(32,28,28);
+  background-image: url(/images/gradient.jpg);
 }
 header {
   position: absolute;

@@ -322,7 +322,7 @@ app.post("/food4", (req, res) => {
   function SetCheckin() {
     const click = {
       Name: UserName,
-      Food: "poha",
+      Food: "Poha",
       Price: "₹20",
     };
 
@@ -347,7 +347,7 @@ app.post("/food5", (req, res) => {
   function SetCheckin() {
     const click = {
       Name: UserName,
-      Food: "idle",
+      Food: "Idle",
       Price: "₹20",
     };
 
@@ -372,7 +372,7 @@ app.post("/food6", (req, res) => {
   function SetCheckin() {
     const click = {
       Name: UserName,
-      Food: "tea",
+      Food: "Tea",
       Price: "₹20",
     };
 
@@ -397,7 +397,7 @@ app.post("/food7", (req, res) => {
   function SetCheckin() {
     const click = {
       Name: UserName,
-      Food: "coffee",
+      Food: "Coffee",
       Price: "₹20",
     };
 
